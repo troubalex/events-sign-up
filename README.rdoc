@@ -1,0 +1,7 @@
+== README
+
+Small application for events, including description, sign-up form, and CSV download.
+
+* Ruby version 2.2.2p95
+
+* Rails version 4.2.3
