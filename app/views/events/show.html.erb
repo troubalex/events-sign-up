@@ -1,0 +1,20 @@
+<h1><%= @event.title %></h1>
+
+<div id="event_details">
+	<p><%= @event.date %></p>
+	<p><%= @event.address %></p>
+</div>
+
+<h2>Sign-up for <%= @event.title %> with <%= @event.presenter %></h2>
+
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+<% elsif flash[:alert] %>
+    <div class="alert"><%= flash[:alert] %></div>
+ <% end %>
+
+<%= render 'attendees/form' %>
+
+<div id="event_description">
+	<p><%= @event.description %></p>
+</div>

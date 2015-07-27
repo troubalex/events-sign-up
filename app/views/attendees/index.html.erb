@@ -1,0 +1,17 @@
+<h1>Listing all attendees</h1>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Event</th>
+	</tr>
+
+<% @attendees.each do |attendee| %>
+	<tr>
+		<td><%= attendee.name %></td>
+		<td><%= attendee.email %></td>
+		<td><!-- TODO add query to connect attendees and events -->.</td>
+	</tr>
+<% end %>
+</table>

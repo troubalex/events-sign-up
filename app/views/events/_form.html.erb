@@ -1,0 +1,36 @@
+<%= form_for @event do |f| %>
+  <div>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+
+ <div>
+    <%= f.label :presenter %><br>
+    <%= f.text_field :presenter %>
+  </div>
+
+  <div>
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+  </div>
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  <div>
+    
+  </div>
+ 
+  <div>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+
+<!-- TODO: file upload for banner
+  <div>
+    <%= file_field(:event, :banner, accept: 'image/png,image/gif,image/jpeg') %>
+  </div> 
+-->
+ 
+  <div>
+    <%= f.submit 'Publish' %>
+  </div>
+<% end %>
